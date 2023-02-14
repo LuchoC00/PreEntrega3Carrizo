@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(137, 215, 241), rgb(65, 115, 182));
+}
+
+/* Variables */
+
+
+
+/* navbar */
+
+header{
+	width: 100%;
+    position:sticky;
+    top: 0%;
+    z-index: 5;
+    border: 5px solid rgb(74, 75, 75);
+
+	nav{
+		.container-fluid{
+			text-align: center;
+			background-color: aquamarine;
+
+			.navbar-nav{
+				background-color: rgb(9, 250, 170);
+
+				li{
+					border: .18rem solid;
+
+					&:hover{
+						background-color: blue;
+					}
+					a{
+						font-size: 1.6rem;
+						font-weight: bold;
+						color: gray;
+
+						&:hover{
+							transform: scale(1.2);
+							color: red;
+						}
+					}
+				}
+			}
+		}
+	}
+}

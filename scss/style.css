@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(137, 215, 241), rgb(65, 115, 182));
+}
+
+/* Variables */
+/* navbar */
+header {
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  z-index: 5;
+  border: 5px solid rgb(74, 75, 75);
+}
+header nav .container-fluid {
+  text-align: center;
+  background-color: aquamarine;
+}
+header nav .container-fluid .navbar-nav {
+  background-color: rgb(9, 250, 170);
+}
+header nav .container-fluid .navbar-nav li {
+  border: 0.18rem solid;
+}
+header nav .container-fluid .navbar-nav li:hover {
+  background-color: blue;
+}
+header nav .container-fluid .navbar-nav li a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: gray;
+}
+header nav .container-fluid .navbar-nav li a:hover {
+  transform: scale(1.2);
+  color: red;
+}/*# sourceMappingURL=style.css.map */
