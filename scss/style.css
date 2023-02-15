@@ -2,14 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-body {
-  background: linear-gradient(rgb(137, 215, 241), rgb(65, 115, 182));
-}
-
-/* Variables */
-/* navbar */
+/* Navbar */
 header {
   width: 100%;
   position: sticky;
@@ -17,25 +13,31 @@ header {
   z-index: 5;
   border: 5px solid rgb(74, 75, 75);
 }
-header nav .container-fluid {
-  text-align: center;
+header .container-fluid {
   background-color: aquamarine;
+  text-align: center;
 }
-header nav .container-fluid .navbar-nav {
-  background-color: rgb(9, 250, 170);
+header .container-fluid .container-logo a {
+  width: auto;
+  display: flex;
+  text-align: start;
+  background-color: red;
 }
-header nav .container-fluid .navbar-nav li {
-  border: 0.18rem solid;
-}
-header nav .container-fluid .navbar-nav li:hover {
-  background-color: blue;
-}
-header nav .container-fluid .navbar-nav li a {
-  font-size: 1.6rem;
-  font-weight: bold;
+header .container-fluid ul li {
   color: gray;
+  background-color: rgb(201, 190, 190);
+  border: 0.2rem solid black;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
-header nav .container-fluid .navbar-nav li a:hover {
+header .container-fluid ul li:hover {
+  color: rgb(201, 190, 190);
+  background-color: gray;
+  border: 0.2rem solid black;
+}
+header .container-fluid ul li:hover a:hover {
   transform: scale(1.2);
-  color: red;
+  color: rgb(201, 190, 190);
 }/*# sourceMappingURL=style.css.map */

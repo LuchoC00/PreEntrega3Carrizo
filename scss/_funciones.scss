@@ -1,0 +1,8 @@
+
+
+
+@mixin caja-pintar($color, $back-color, $border, $border-color){
+    color: $color;
+    background-color: $back-color;
+    border: $border solid $border-color;
+}

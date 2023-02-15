@@ -1,49 +1,47 @@
+@import "variables";
+@import "funciones";
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{
-    background: linear-gradient(rgb(137, 215, 241), rgb(65, 115, 182));
-}
-
-/* Variables */
-
-
-
-/* navbar */
+/* Navbar */
 
 header{
 	width: 100%;
-    position:sticky;
-    top: 0%;
-    z-index: 5;
-    border: 5px solid rgb(74, 75, 75);
+	position: sticky;
+	top: 0%;
+	z-index: 5;
+	border: 5px solid rgb(74, 75, 75);
 
-	nav{
-		.container-fluid{
-			text-align: center;
-			background-color: aquamarine;
+	.container-fluid{
+		background-color: $nav-color-fondo;
+		text-align: center;
+		
+		.container-logo a{
+			width: auto;
+			display: flex;
+			text-align: start;
+			background-color: red;
+		}
+		ul{
+			li{			
+				@include caja-pintar($navlink-color, rgb(201, 190, 190), .2rem, black );
+				font-size: $navlink-size;
+				text-align: center;
+				
+				font-weight: bold;
+				font-size: 1.6rem;
 
-			.navbar-nav{
-				background-color: rgb(9, 250, 170);
-
-				li{
-					border: .18rem solid;
-
-					&:hover{
-						background-color: blue;
-					}
-					a{
-						font-size: 1.6rem;
-						font-weight: bold;
-						color: gray;
-
-						&:hover{
-							transform: scale(1.2);
-							color: red;
-						}
+				&:hover{	
+					@include caja-pintar(rgb(201, 190, 190), $navlink-color, .2rem, black);
+										
+					a:hover{
+						transform: scale(1.2);
+						color: rgb(201, 190, 190);
 					}
 				}
 			}
