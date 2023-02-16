@@ -56,4 +56,10 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla-index #presentacion .texto {
   padding: 1rem;
+}
+.grilla-index #presentacion .texto h1 {
+  font-size: 1.8rem;
+}
+.grilla-index #presentacion .texto h2 {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
