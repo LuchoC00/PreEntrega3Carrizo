@@ -62,4 +62,61 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla-index #presentacion .texto h2 {
   font-size: 1.3rem;
+}
+.grilla-index #main .texto h2 {
+  font-size: 1.3rem;
+}
+.grilla-index #main .texto p {
+  font-size: 1rem;
+}
+.grilla-index #izquierda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grilla-index #izquierda .texto p {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+.grilla-index #izquierda .imagen {
+  width: 100%;
+}
+.grilla-index #izquierda .imagen img {
+  width: 100%;
+}
+.grilla-index #derecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grilla-index #derecha .texto p {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+.grilla-index #derecha .imagen {
+  width: 100%;
+}
+.grilla-index #derecha .imagen img {
+  width: 100%;
+}
+.grilla-index #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.grilla-index #footer .texto {
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.grilla-index #footer .logo {
+  width: 30%;
+}
+.grilla-index #footer .logo img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
