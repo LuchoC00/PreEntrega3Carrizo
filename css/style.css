@@ -211,11 +211,12 @@ footer div.logo a{
     grid-area: footer;
 }
 
-/*empresa*/
 
 section#empresa_seccion-1, section#empresa_seccion-2{
     border: 0 ;
 }
+
+/*empresa*/
 
 .grilla_empresa{
     display: grid;
