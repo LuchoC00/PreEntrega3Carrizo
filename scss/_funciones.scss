@@ -17,3 +17,24 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin footer-general(){
+    grid-area: footer;
+    @include flex-center-center;
+    width: 100%;
+
+    .texto{
+        text-align: left;
+
+        font-size: $texto-general-size;
+        padding: .5rem;
+    }
+
+    .logo{
+        width: 30%;
+
+        img{
+            width: 100%;
+        }
+    }
+}

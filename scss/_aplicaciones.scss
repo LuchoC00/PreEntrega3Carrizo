@@ -59,10 +59,23 @@
     #aside{
         grid-area: aside;
         @include flex-center-center;
-        flex-direction: column;
-        
+        flex-wrap: wrap;
+
         .aside_caja{
-            
+            width: 45%;
+            padding: 1rem;
+
+            img{
+                width: 90%;
+            }
+
+            p{
+                font-size: $texto-general-size;
+            }
+
         }
+    }
+    #footer{
+        @include footer-general;
     }
 }
