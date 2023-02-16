@@ -1,0 +1,43 @@
+
+
+.grilla-algo{
+    position: sticky;
+
+    #main{
+        background-image: url(../assets/img/bootstrap_image.jfif) ;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center;
+
+        .error{
+            @include flex-center-center;
+            flex-direction: column;
+            padding: .5rem;
+            
+            .caja{
+                @include flex-center-center;
+                flex-direction: column;
+                padding: .5rem;
+
+                img{
+                    width: 70%;
+                    padding: 1rem;
+                }
+
+                h2{
+                    font-size: $texto-principal-size;
+                }
+                                               
+                .texto{
+                    text-align: center;
+                    @include flex-center-center;
+                    flex-direction: column;
+
+                    p{
+                        font-size: $texto-secundario-size;
+                    }
+                }
+            }
+        }
+    }
+}

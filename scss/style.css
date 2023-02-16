@@ -302,7 +302,7 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla_contacto #seccion-1 .caja .subcaja .social {
   text-decoration: none;
-  width: 35%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,4 +331,45 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla_contacto #footer .logo img {
   width: 100%;
+}
+
+.grilla-algo {
+  position: sticky;
+}
+.grilla-algo #main {
+  background-image: url(../assets/img/bootstrap_image.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.grilla-algo #main .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.grilla-algo #main .error .caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.grilla-algo #main .error .caja img {
+  width: 70%;
+  padding: 1rem;
+}
+.grilla-algo #main .error .caja h2 {
+  font-size: 1.8rem;
+}
+.grilla-algo #main .error .caja .texto {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grilla-algo #main .error .caja .texto p {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
