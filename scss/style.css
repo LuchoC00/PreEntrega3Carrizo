@@ -119,4 +119,66 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla-index #footer .logo img {
   width: 100%;
+}
+
+.grilla-aplicaciones {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "main" "seccion-1" "seccion-2" "aside" "footer";
+}
+.grilla-aplicaciones #main {
+  grid-area: main;
+}
+.grilla-aplicaciones #main h1 {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.grilla-aplicaciones #main p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+.grilla-aplicaciones #main p.secundario {
+  padding: 0;
+  font-size: 1.3rem;
+}
+.grilla-aplicaciones #seccion-1 {
+  grid-area: seccion-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grilla-aplicaciones #seccion-1 .texto {
+  padding: 1rem;
+}
+.grilla-aplicaciones #seccion-1 .texto h2 {
+  font-size: 1.3rem;
+}
+.grilla-aplicaciones #seccion-1 .texto p {
+  font-size: 1rem;
+}
+.grilla-aplicaciones #seccion-2 {
+  grid-area: seccion-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grilla-aplicaciones #seccion-2 .texto {
+  padding: 1rem;
+}
+.grilla-aplicaciones #seccion-2 .texto h2 {
+  font-size: 1.3rem;
+}
+.grilla-aplicaciones #seccion-2 .texto p {
+  font-size: 1rem;
+}
+.grilla-aplicaciones #aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
