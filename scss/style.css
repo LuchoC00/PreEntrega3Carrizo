@@ -11,7 +11,7 @@ header {
   position: sticky;
   top: 0%;
   z-index: 5;
-  border: 5px solid rgb(74, 75, 75);
+  border: 5px solid rgb(75, 75, 75);
 }
 header .container-fluid {
   background-color: aquamarine;
@@ -125,6 +125,7 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla-index #footer .logo a {
   text-decoration: none;
+  color: rgb(45, 45, 45);
 }
 .grilla-index #footer .logo a img {
   width: 100%;
@@ -222,6 +223,7 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla-aplicaciones #footer .logo a {
   text-decoration: none;
+  color: rgb(45, 45, 45);
 }
 .grilla-aplicaciones #footer .logo a img {
   width: 100%;
@@ -288,34 +290,34 @@ header .container-fluid ul li:hover a:hover {
   margin: 1rem;
 }
 
-.grilla_contacto {
+.grilla-contacto {
   display: grid;
   gap: 0.4rem;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-template-areas: "seccion-1" "footer";
 }
-.grilla_contacto #seccion-1 {
+.grilla-contacto #seccion-1 {
   grid-area: seccion-1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.grilla_contacto #seccion-1 .caja {
+.grilla-contacto #seccion-1 .caja {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
 }
-.grilla_contacto #seccion-1 .caja .subcaja {
+.grilla-contacto #seccion-1 .caja .subcaja {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.grilla_contacto #seccion-1 .caja .subcaja .social {
+.grilla-contacto #seccion-1 .caja .subcaja .social {
   text-decoration: none;
   width: 50%;
   display: flex;
@@ -323,13 +325,13 @@ header .container-fluid ul li:hover a:hover {
   align-items: center;
   margin: auto;
 }
-.grilla_contacto #seccion-1 .caja .subcaja .social img {
+.grilla-contacto #seccion-1 .caja .subcaja .social img {
   width: 15%;
 }
-.grilla_contacto #seccion-1 .caja .subcaja .social p {
+.grilla-contacto #seccion-1 .caja .subcaja .social p {
   font-size: 1rem;
 }
-.grilla_contacto #footer {
+.grilla-contacto #footer {
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -340,18 +342,19 @@ header .container-fluid ul li:hover a:hover {
   background-color: gray;
   border: 0.5rem solid black;
 }
-.grilla_contacto #footer .texto {
+.grilla-contacto #footer .texto {
   text-align: left;
   font-size: 1rem;
   padding: 0.3rem;
 }
-.grilla_contacto #footer .logo {
+.grilla-contacto #footer .logo {
   width: 30%;
 }
-.grilla_contacto #footer .logo a {
+.grilla-contacto #footer .logo a {
   text-decoration: none;
+  color: rgb(45, 45, 45);
 }
-.grilla_contacto #footer .logo a img {
+.grilla-contacto #footer .logo a img {
   width: 100%;
 }
 
@@ -401,6 +404,89 @@ header .container-fluid ul li:hover a:hover {
   font-size: 1.3rem;
 }
 
+@media screen and (min-width: 768px) {
+  nav .container-fluid div ul li {
+    margin: 0.2rem;
+    border-radius: 20%;
+    font-size: 1.3rem;
+  }
+  nav .container-fluid div ul li:hover a:hover {
+    transform: scale(1.1);
+  }
+  .grilla-index {
+    grid-template-rows: auto auto 0.5fr 0.5fr 0.5fr 0.5fr;
+    border: 0.25rem solid black;
+  }
+  .grilla-index #main {
+    border: 0.15rem solid rgb(57, 18, 94);
+  }
+  .grilla-index #izquierda {
+    flex-direction: row;
+    border: 0.15rem solid rgb(57, 18, 94);
+  }
+  .grilla-index #derecha {
+    flex-direction: row-reverse;
+    border: 0.15rem solid rgb(57, 18, 94);
+  }
+  .grilla-aplicaciones {
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "main aside" "seccion-1 aside" "seccion-2 aside" "footer footer";
+    gap: 0;
+    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
+  }
+  .grilla-aplicaciones #main {
+    border: 0.1rem solid black;
+  }
+  .grilla-aplicaciones #main p {
+    padding: 0.5rem 2rem;
+  }
+  .grilla-aplicaciones #main p.secundario {
+    padding: 0.5rem 3rem;
+  }
+  .grilla-aplicaciones #seccion-1, .grilla-aplicaciones #seccion-2 {
+    flex-direction: row;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+  }
+  .grilla-aplicaciones #aside {
+    color: black;
+    background-color: lightcyan;
+    border: 0.2rem solid black;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .grilla-aplicaciones #aside .aside_caja {
+    width: 90%;
+  }
+  .grilla-empresa {
+    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
+  }
+  .grilla-empresa #seccion-1 .caja img.logo {
+    width: 10%;
+  }
+  .grilla-empresa #seccion-1 .caja p {
+    padding: 0.5rem 2rem;
+  }
+  .grilla-empresa #seccion-1 .caja-2 {
+    padding: 0.5rem 1.5rem;
+    flex-direction: row;
+  }
+  .grilla-contacto {
+    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
+  }
+  .grilla-contacto #seccion-1 .caja {
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    background-color: rgba(31, 3, 43, 0.2);
+    border: 0.3rem solid black;
+  }
+  .grilla-contacto #seccion-1 .caja .subcaja {
+    justify-content: space-around;
+    width: 40%;
+  }
+}
 .rainbow {
   animation: rainbow 3s ease 0s infinite;
 }

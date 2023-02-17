@@ -15,7 +15,7 @@ header{
 	position: sticky;
 	top: 0%;
 	z-index: 5;
-	border: 5px solid rgb(74, 75, 75);
+	border: 5px solid rgb(75, 75, 75);
 
 	.container-fluid{
 		background-color: $nav-color-fondo;
@@ -52,6 +52,9 @@ header{
 @import "contacto";
 
 @import "algo";
+
+@import "responsive";
+
 
 .rainbow{
 	animation: rainbow 3s ease 0s infinite ;
@@ -109,3 +112,4 @@ header{
 		color: rgb(255,0,127);
 	}
 }
+

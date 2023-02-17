@@ -1,0 +1,122 @@
+@media screen and (min-width: 768px) {
+	
+    nav{
+        .container-fluid{
+
+            div{
+
+                ul{
+
+                    li{
+                        margin: .2rem;
+                        border-radius: 20%;
+                        font-size: $texto-secundario-size;
+                                               
+                        &:hover{                   
+                        
+                            a:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }                   
+                }
+            }            
+        }
+    }
+
+    .grilla-index{
+        grid-template-rows: auto auto .5fr .5fr .5fr .5fr;
+        border: .25rem solid black;
+
+        #main{
+            border: .15rem solid rgb(57, 18, 94);
+        }
+
+        #izquierda{
+            flex-direction: row;
+            border: .15rem solid rgb(57, 18, 94);
+        }
+
+        #derecha{
+            flex-direction: row-reverse;
+            border: .15rem solid rgb(57, 18, 94);
+        }
+    }
+
+    .grilla-aplicaciones{
+        grid-template-columns: 2fr .5fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "main aside" "seccion-1 aside" "seccion-2 aside" "footer footer";    
+        gap: 0;
+        background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
+        
+        #main{
+            border: .1rem solid black;
+
+            p{
+                padding: .5rem 2rem;
+
+                &.secundario{
+                    padding: .5rem 3rem;
+                }
+            }
+        }
+
+        #seccion-1, #seccion-2{
+            flex-direction: row;
+            padding: .5rem;
+            border: .1rem solid black;
+        }
+        
+        #aside{
+            @include caja-pintar(black, lightcyan, .2rem, black);
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            .aside_caja{
+                width: 90%;
+            }
+        }
+    }
+
+    .grilla-empresa{
+        background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
+
+        #seccion-1{
+
+            .caja{
+
+                img.logo{
+                    width: 10%;
+                }
+                
+                p{
+                    padding: .5rem 2rem;
+                }
+            }
+
+            .caja-2{
+                padding: .5rem 1.5rem;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .grilla-contacto{
+        background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
+
+        #seccion-1{
+
+            .caja{
+                flex-direction: row;
+                flex-wrap: wrap;
+                @include caja-pintar(black, rgba(31, 3, 43, .2), .3rem, black);
+
+                .subcaja{
+                    justify-content: space-around;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
