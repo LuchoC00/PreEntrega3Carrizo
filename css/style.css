@@ -57,7 +57,7 @@ header{
     background-color: rgb(138, 146, 146);
 }
 
-.texto_principal{
+.{
     margin: 1rem;
 }
 
@@ -87,14 +87,14 @@ header{
     border: 5px solid black;
 }
 
-h2.texto_principal{
+h2.{
     font-size: 1.5rem;
     font-weight: 700;
     color: rgb(59, 37, 77);
     margin: 1rem;
 }
 
-.texto_global{
+.{
     font-size: 1.1rem;
     font-family: cursive;
     margin: .8rem;
@@ -166,10 +166,10 @@ footer div.logo a{
     border: 5px solid black;
 }
 
-#aplicaciones_main .texto_principal{
+#aplicaciones_main .{
     color: rgb(133, 8, 112);
 }
-#aplicaciones_main .texto_secundario{
+#aplicaciones_main .{
     color: rgb(174, 46, 206);
 }
 

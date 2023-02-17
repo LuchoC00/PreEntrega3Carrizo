@@ -22,19 +22,26 @@
     grid-area: footer;
     @include flex-center-center;
     width: 100%;
-
+    padding: .3rem;
+    @include caja-pintar(black, gray, .5rem , black);
+    
     .texto{
         text-align: left;
 
         font-size: $texto-general-size;
-        padding: .5rem;
+        padding: .3rem;
     }
 
     .logo{
         width: 30%;
 
-        img{
-            width: 100%;
+        a{
+            text-decoration: none;
+
+            img{
+                width: 100%;
+            }
         }
+        
     }
 }

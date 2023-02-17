@@ -13,6 +13,14 @@
             @include flex-center-center;
             flex-direction: column;
             padding: .5rem;
+            text-decoration: none;
+
+            &:hover{
+                .caja{
+                    transform: scale(.7);
+                    padding: 1px;
+                }                
+            }
             
             .caja{
                 @include flex-center-center;
