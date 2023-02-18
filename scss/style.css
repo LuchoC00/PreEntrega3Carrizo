@@ -45,7 +45,7 @@ header .container-fluid ul li:hover a:hover {
   background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
 }
 .grilla-index #presentacion {
-  background-image: url(../assets/img/bootstrap_image.jfif);
+  background-image: url(../assets/img/fondoPantalla.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -130,6 +130,11 @@ header .container-fluid ul li:hover a:hover {
 .grilla-index #footer .logo a img {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .grilla-index #footer .logo a img {
+    width: 50%;
+  }
+}
 
 .grilla-aplicaciones {
   display: grid;
@@ -137,6 +142,7 @@ header .container-fluid ul li:hover a:hover {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "main" "seccion-1" "seccion-2" "aside" "footer";
+  background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
 }
 .grilla-aplicaciones #main {
   grid-area: main;
@@ -228,6 +234,11 @@ header .container-fluid ul li:hover a:hover {
 .grilla-aplicaciones #footer .logo a img {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .grilla-aplicaciones #footer .logo a img {
+    width: 50%;
+  }
+}
 
 .grilla-empresa {
   display: grid;
@@ -235,6 +246,7 @@ header .container-fluid ul li:hover a:hover {
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-template-areas: "seccion-1" "seccion-2";
+  background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
 }
 .grilla-empresa #seccion-1 {
   grid-area: seccion-1;
@@ -250,12 +262,14 @@ header .container-fluid ul li:hover a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .grilla-empresa #seccion-1 .caja h1 {
   font-size: 1.8rem;
 }
 .grilla-empresa #seccion-1 .caja p {
   font-size: 1rem;
+  padding: 0 4rem;
 }
 .grilla-empresa #seccion-1 .caja img {
   margin: 0.3rem;
@@ -286,6 +300,9 @@ header .container-fluid ul li:hover a:hover {
   justify-content: space-evenly;
   padding: 1rem;
 }
+.grilla-empresa #seccion-2 .texto p {
+  font-size: 1rem;
+}
 .grilla-empresa #seccion-2 .texto .caja {
   margin: 1rem;
 }
@@ -296,6 +313,7 @@ header .container-fluid ul li:hover a:hover {
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-template-areas: "seccion-1" "footer";
+  background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
 }
 .grilla-contacto #seccion-1 {
   grid-area: seccion-1;
@@ -357,12 +375,18 @@ header .container-fluid ul li:hover a:hover {
 .grilla-contacto #footer .logo a img {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .grilla-contacto #footer .logo a img {
+    width: 50%;
+  }
+}
 
 .grilla-algo {
   position: sticky;
+  background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
 }
 .grilla-algo #main {
-  background-image: url(../assets/img/bootstrap_image.jfif);
+  background-image: url(../assets/img/descarga.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -433,7 +457,6 @@ header .container-fluid ul li:hover a:hover {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "main aside" "seccion-1 aside" "seccion-2 aside" "footer footer";
     gap: 0;
-    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
   }
   .grilla-aplicaciones #main {
     border: 0.1rem solid black;
@@ -459,9 +482,6 @@ header .container-fluid ul li:hover a:hover {
   .grilla-aplicaciones #aside .aside_caja {
     width: 90%;
   }
-  .grilla-empresa {
-    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
-  }
   .grilla-empresa #seccion-1 .caja img.logo {
     width: 10%;
   }
@@ -471,9 +491,6 @@ header .container-fluid ul li:hover a:hover {
   .grilla-empresa #seccion-1 .caja-2 {
     padding: 0.5rem 1.5rem;
     flex-direction: row;
-  }
-  .grilla-contacto {
-    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
   }
   .grilla-contacto #seccion-1 .caja {
     flex-direction: row;

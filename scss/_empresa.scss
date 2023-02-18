@@ -5,6 +5,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-template-areas: "seccion-1" "seccion-2";
+    background-image: linear-gradient(rgb(105, 45, 155), rgb(68, 68, 151));
 
     #seccion-1{
         grid-area: seccion-1;
@@ -15,14 +16,16 @@
             width: 100%;
             padding: 1rem;
             text-align: center;
-            @include flex-center-center;   
-            
+            @include flex-center-center;
+            flex-direction: column;   
+
             h1{
                 font-size: $texto-principal-size;
             }
-            
+
             p{
                 font-size: $texto-general-size;
+                padding: 0 4rem;
             }
 
             img{
@@ -56,6 +59,10 @@
             @include flex-center-center;
             justify-content: space-evenly;
             padding: 1rem;
+
+            p{
+                font-size: $texto-general-size;
+            }
 
             .caja{
                 margin: 1rem;
