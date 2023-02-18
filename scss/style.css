@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Condensed:wght@300;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Navbar */
@@ -14,7 +15,7 @@ header {
   border: 5px solid rgb(75, 75, 75);
 }
 header .container-fluid {
-  background-color: aquamarine;
+  background-color: rgb(164, 151, 184);
   text-align: center;
 }
 header .container-fluid ul li {
@@ -85,7 +86,7 @@ header .container-fluid ul li:hover a:hover {
   width: 100%;
 }
 .grilla-index #izquierda .imagen img {
-  width: 100%;
+  width: 90%;
 }
 .grilla-index #derecha {
   display: flex;
@@ -102,7 +103,7 @@ header .container-fluid ul li:hover a:hover {
   width: 100%;
 }
 .grilla-index #derecha .imagen img {
-  width: 100%;
+  width: 90%;
 }
 .grilla-index #footer {
   grid-area: footer;
@@ -156,7 +157,7 @@ header .container-fluid ul li:hover a:hover {
   padding: 1rem;
 }
 .grilla-aplicaciones #main p.secundario {
-  padding: 0;
+  padding: 0 1rem;
   font-size: 1.3rem;
 }
 .grilla-aplicaciones #seccion-1 {
@@ -348,6 +349,10 @@ header .container-fluid ul li:hover a:hover {
 }
 .grilla-contacto #seccion-1 .caja .subcaja .social p {
   font-size: 1rem;
+  color: rgb(37, 35, 35);
+}
+.grilla-contacto #seccion-1 .caja .subcaja .social p:hover {
+  color: rgb(20, 212, 148);
 }
 .grilla-contacto #footer {
   grid-area: footer;
@@ -413,6 +418,7 @@ header .container-fluid ul li:hover a:hover {
 .grilla-algo #main .error .caja img {
   width: 70%;
   padding: 1rem;
+  margin: 2rem;
 }
 .grilla-algo #main .error .caja h2 {
   font-size: 1.8rem;
@@ -441,16 +447,40 @@ header .container-fluid ul li:hover a:hover {
     grid-template-rows: auto auto 0.5fr 0.5fr 0.5fr 0.5fr;
     border: 0.25rem solid black;
   }
+  .grilla-index #presentacion .texto h1 {
+    font-size: 3.6rem;
+  }
+  .grilla-index #presentacion .texto h2 {
+    font-size: 2.6rem;
+  }
   .grilla-index #main {
     border: 0.15rem solid rgb(57, 18, 94);
+  }
+  .grilla-index #main .texto p {
+    font-size: 2rem;
+  }
+  .grilla-index #main .texto h2 {
+    font-size: 2.6rem;
   }
   .grilla-index #izquierda {
     flex-direction: row;
     border: 0.15rem solid rgb(57, 18, 94);
   }
+  .grilla-index #izquierda .texto p {
+    font-size: 2rem;
+  }
+  .grilla-index #izquierda .imagen {
+    width: 65%;
+  }
   .grilla-index #derecha {
     flex-direction: row-reverse;
     border: 0.15rem solid rgb(57, 18, 94);
+  }
+  .grilla-index #derecha .texto p {
+    font-size: 2rem;
+  }
+  .grilla-index #derecha .imagen {
+    width: 65%;
   }
   .grilla-aplicaciones {
     grid-template-columns: 2fr 0.5fr;
@@ -460,17 +490,33 @@ header .container-fluid ul li:hover a:hover {
   }
   .grilla-aplicaciones #main {
     border: 0.1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grilla-aplicaciones #main h1 {
+    font-size: 3.6rem;
   }
   .grilla-aplicaciones #main p {
     padding: 0.5rem 2rem;
+    font-size: 2rem;
   }
   .grilla-aplicaciones #main p.secundario {
     padding: 0.5rem 3rem;
+    font-size: 2.6rem;
   }
   .grilla-aplicaciones #seccion-1, .grilla-aplicaciones #seccion-2 {
     flex-direction: row;
     padding: 0.5rem;
     border: 0.1rem solid black;
+  }
+  .grilla-aplicaciones #seccion-1 .texto p, .grilla-aplicaciones #seccion-1 .texto h2, .grilla-aplicaciones #seccion-2 .texto p, .grilla-aplicaciones #seccion-2 .texto h2 {
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+  }
+  .grilla-aplicaciones #seccion-1 .texto h2, .grilla-aplicaciones #seccion-2 .texto h2 {
+    padding: 0.5rem 3rem;
+    font-size: 2.6rem;
   }
   .grilla-aplicaciones #aside {
     color: black;
@@ -487,10 +533,14 @@ header .container-fluid ul li:hover a:hover {
   }
   .grilla-empresa #seccion-1 .caja p {
     padding: 0.5rem 2rem;
+    font-size: 2rem;
   }
   .grilla-empresa #seccion-1 .caja-2 {
     padding: 0.5rem 1.5rem;
     flex-direction: row;
+  }
+  .grilla-empresa #seccion-2 .texto p {
+    font-size: 2rem;
   }
   .grilla-contacto #seccion-1 .caja {
     flex-direction: row;
@@ -498,10 +548,21 @@ header .container-fluid ul li:hover a:hover {
     color: black;
     background-color: rgba(31, 3, 43, 0.2);
     border: 0.3rem solid black;
+    width: 80%;
   }
   .grilla-contacto #seccion-1 .caja .subcaja {
     justify-content: space-around;
-    width: 40%;
+    width: 45%;
+  }
+  .grilla-contacto #seccion-1 .caja .subcaja .social p {
+    font-size: 1.5rem;
+  }
+  .grilla-algo #main .error .caja h2 {
+    font-size: 2.6rem;
+  }
+  .grilla-algo #main .error .caja .texto p {
+    font-size: 2rem;
+    margin: 1rem;
   }
 }
 .rainbow {

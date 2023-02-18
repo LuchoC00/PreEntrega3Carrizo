@@ -33,6 +33,11 @@
                     
                     p{
                         font-size: 1rem;
+                        color: rgb(37, 35, 35);
+
+                        &:hover{
+                            color: rgb(20, 212, 148)
+                        }
                     }
                 }
             }

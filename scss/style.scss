@@ -1,11 +1,14 @@
 @import "variables";
+
 @import "funciones";
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Condensed:wght@300;700&display=swap');
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Navbar */
@@ -32,7 +35,7 @@ header{
 
 				&:hover{	
 					@include caja-pintar(rgb(201, 190, 190), $navlink-color, .2rem, black);
-										
+				
 					a:hover{
 						transform: scale(1.2);
 						color: rgb(201, 190, 190);
@@ -54,7 +57,6 @@ header{
 @import "algo";
 
 @import "responsive";
-
 
 .rainbow{
 	animation: rainbow 3s ease 0s infinite ;

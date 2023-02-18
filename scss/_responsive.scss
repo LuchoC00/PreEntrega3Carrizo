@@ -11,7 +11,7 @@
                         margin: .2rem;
                         border-radius: 20%;
                         font-size: $texto-secundario-size;
-                                               
+
                         &:hover{                   
                         
                             a:hover{
@@ -24,22 +24,60 @@
         }
     }
 
+
+
     .grilla-index{
         grid-template-rows: auto auto .5fr .5fr .5fr .5fr;
         border: .25rem solid black;
 
+        #presentacion{
+            .texto{
+                h1{
+                    font-size: $texto-principal-size*2;
+                }
+                h2{
+                    font-size: $texto-secundario-size*2;
+                }
+            }
+        }
+
         #main{
             border: .15rem solid rgb(57, 18, 94);
+            
+            .texto{
+                p{
+                    font-size: $texto-general-size*2;
+                }
+                h2{
+                    font-size: $texto-secundario-size*2;
+                }
+            }
         }
 
         #izquierda{
             flex-direction: row;
             border: .15rem solid rgb(57, 18, 94);
+
+            .texto p{
+                font-size: $texto-general-size*2;
+            }
+
+            .imagen{
+                width: 65%;
+            }
         }
 
         #derecha{
             flex-direction: row-reverse;
             border: .15rem solid rgb(57, 18, 94);
+
+            .texto p{
+                font-size: $texto-general-size*2;
+            }
+            
+            .imagen{
+                width: 65%;
+            }
         }
     }
 
@@ -51,12 +89,19 @@
                 
         #main{
             border: .1rem solid black;
+            @include flex-center-center;
+
+            h1{
+                font-size: $texto-principal-size*2;
+            }
 
             p{
                 padding: .5rem 2rem;
+                font-size: $texto-general-size*2;
 
                 &.secundario{
                     padding: .5rem 3rem;
+                    font-size: $texto-secundario-size*2;
                 }
             }
         }
@@ -65,6 +110,16 @@
             flex-direction: row;
             padding: .5rem;
             border: .1rem solid black;
+
+            .texto p, .texto h2{
+                padding: .5rem 2rem;
+                font-size: $texto-general-size*2;
+
+            }
+            .texto h2{
+                padding: .5rem 3rem;
+                font-size: $texto-secundario-size*2;
+            }
         }
         
         #aside{
@@ -90,12 +145,18 @@
                 
                 p{
                     padding: .5rem 2rem;
+                    font-size: $texto-general-size*2;
                 }
             }
 
             .caja-2{
                 padding: .5rem 1.5rem;
                 flex-direction: row;
+            }
+        }
+        #seccion-2{
+            .texto p{
+                font-size: $texto-general-size*2;
             }
         }
     }
@@ -108,11 +169,31 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 @include caja-pintar(black, rgba(31, 3, 43, .2), .3rem, black);
+                width: 80%;
 
                 .subcaja{
                     justify-content: space-around;
-                    width: 40%;
+                    width: 45%;
+
+                    .social p{
+                        font-size: $texto-general-size*1.5;
+                    }
                 }
+            }
+        }
+    }
+
+    .grilla-algo{
+
+        #main .error .caja{
+
+            h2{
+                font-size: $texto-secundario-size*2;
+            }
+
+            .texto p{
+                font-size: $texto-general-size*2;
+                margin: 1rem;
             }
         }
     }
